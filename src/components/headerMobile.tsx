@@ -26,11 +26,9 @@ export default function Header() {
 
                 <div className="w-full flex items-center justify-end">
                     <Button
-                        colorText={""} fontWeigth={""} fontSize={""} backgroundColor={""} borderRadius={""}
                         margin={"mr-4"} iconOrder={IconOrder.BEFORETEXT}
                         icon={<GoPerson className="mr-[calc(1px)] text-2xl text-color-text-hover"></GoPerson>}
                     ></Button>
-                
 
                     <Button
                         width = {"w-[100px]"}
