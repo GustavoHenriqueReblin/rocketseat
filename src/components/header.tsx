@@ -18,7 +18,10 @@ interface HeaderProps {
 export default function Header(props: HeaderProps) {
     const { links } = props;
     return (
-        <main className="h-[calc(83px)] w-full border-b flex justify-center border-zinc-800 px-6">
+        <main className="
+            lg:flex mobile:hidden
+            h-[calc(83px)] w-full border-b justify-center border-zinc-800 px-6
+        ">
             <div className="h-full w-full flex flex-row items-center pb-1 max-w-8x1">
 
                 {/* Logo */}
@@ -33,7 +36,10 @@ export default function Header(props: HeaderProps) {
                     {!links ? null :
                     
                     links.map((link, i) => (
-                        <a href="#" key={i} className="h-full lg:w-full md:w-[calc(80%)] flex items-center text-color-text hover:text-color-text-hover hover:border-b hover:border-main-purple font-medium mx-3">
+                        <a href="#" key={i} className="
+                            md:text-sm lg+:text-base
+                            h-full w-fit flex items-center text-color-text hover:text-color-text-hover hover:border-b hover:border-main-purple font-medium mx-3
+                        ">
                             {link.text}
                             {link.type === LinkTypes.MOREOPTIONS ? <RiArrowDropDownLine className="text-2xl"/> : null}
                         </a>
@@ -59,7 +65,7 @@ export default function Header(props: HeaderProps) {
                 ></Button>
 
                 <Button
-                    width = {"w-[160px]"}
+                    width = {"w-[170px]"}
                     text = {"Criar conta"}
                     colorText = {"text-[#fff]"}
                     fontWeigth = {"font-[800]"}
@@ -68,7 +74,7 @@ export default function Header(props: HeaderProps) {
                     borderColor = {"border-[#8257e5]"}
                     backgroundColor = {"bg-[#121214]"}
                     margin = {"mt-1 ml-[5px]"}
-                    padding = {"px-[20px] py-[10px]"}
+                    padding = {"px-[10px] py-[10px]"}
                     borderRadius = {"rounded-md"}
                     transition = {
                         "transition ease-in-out delay-600 " +

@@ -8,7 +8,14 @@ export default module.exports = {
   ],
   theme: {
     screens: {
-      //
+      'mobile': '1px',
+      'sm': '640px',
+      'md': '768px',
+      'md+': '896px',
+      'lg': '1024px',
+      'lg+': '1132px',
+      'xl': '1280px',
+      '2xl': '1536px',
     },
     extend: {
       maxWidth: {
