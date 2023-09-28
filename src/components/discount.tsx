@@ -2,11 +2,11 @@ import Button from "@/components/button";
 import { IconOrder } from "@/types/icon-order";
 import { MdOutlineDiscount } from '@/node_modules/react-icons/md';
 
-export default function Discount() {
+const Discount = () => {
     return (
         <div className=" 
             mobile:h-28 mobile:flex-col md:h-14 md:flex-row
-            w-full bg-[#633bbc] flex items-center justify-center cursor-pointer
+            w-full bg-[#633bbc] flex items-center justify-center cursor-pointer z-0
         ">
             <Button
                 width = {"w-[175px]"}
@@ -28,3 +28,5 @@ export default function Discount() {
         </div>
     )
 };
+
+export default Discount;

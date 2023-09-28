@@ -22,7 +22,7 @@ interface ButtonProps {
     icon?: any | null
 };
 
-export default function Button(props: ButtonProps) {
+const Button = (props: ButtonProps) => {
     const { 
         height, maxheight, width, maxwidth, text, fontWeigth, colorText, fontSize, 
         borderColor, borderWidth, backgroundColor, margin, padding, borderRadius, 
@@ -46,3 +46,5 @@ export default function Button(props: ButtonProps) {
         </button>
     )
 };
+
+export default Button;

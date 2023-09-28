@@ -6,6 +6,7 @@ import { LinkTypes } from "@/types/link-types";
 import Image from '@/node_modules/next/image';
 import background from '@/assets/hero-background.webp';
 import hand from '@/assets/hand.svg';
+import Particle from "@/components/particle";
 
 export default function Home() {
   const links = [
@@ -19,35 +20,21 @@ export default function Home() {
 
   return (
     <>
+      <Particle></Particle>
+
       <Header links={links}></Header>
       <HeaderMobile></HeaderMobile>
 
       <Discount></Discount>
 
-      <Image className="-z-50 absolute mt-36"
+      <Image className="absolute mt-36 -z-20"
           src={background}
           alt=""
           width={5460}
       />
 
-      <Text
-        text={"Hello World!"}
-        fontSize={"md:text-[17px] mobile:text-[14px]"}
-        fontWeigth = {"font-[600]"}
-        colorText={"text-[#06d354]"}
-        textAlign={"items-center justify-center"}
-        margin={"md:mt-[90px] mobile:mt-[45px]"}
-        icon={
-          <Image className=""
-            src={hand}
-            alt=""
-            width={25}
-          />
-        }
-      ></Text>
-
       {/* Remover */}
-      <div className="h-[calc(8500px)] w-full"></div>
+      {/* <div className="h-[calc(8500px)] w-full"></div> */}
     </>
   )
 };

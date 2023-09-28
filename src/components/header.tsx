@@ -18,9 +18,9 @@ interface HeaderProps {
 export default function Header(props: HeaderProps) {
     const { links } = props;
     return (
-        <main className="
+        <div className="
             lg:flex mobile:hidden
-            h-[calc(83px)] w-full border-b justify-center border-zinc-800 px-6
+            h-[calc(83px)] w-full border-b justify-center border-zinc-800 px-6 -z-20
         ">
             <div className="h-full w-full flex flex-row items-center pb-1 max-w-8x1">
 
@@ -83,6 +83,6 @@ export default function Header(props: HeaderProps) {
                     backgroundColorHover = {"hover:bg-[#9466ff]"}
                 ></Button>
             </div>
-        </main>
+        </div>
     )
 };

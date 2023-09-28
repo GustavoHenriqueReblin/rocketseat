@@ -5,9 +5,9 @@ import { GoPerson } from '@/node_modules/react-icons/go';
 import { IoMdReorder } from '@/node_modules/react-icons/io';
 import Button from "@/components/button";
 
-export default function Header() {
+const Header = () => {
     return (
-        <main className="
+        <div className="
             lg:hidden mobile:flex
             h-[calc(83px)] w-full border-b justify-center border-zinc-800 px-6
         ">
@@ -50,6 +50,8 @@ export default function Header() {
                     ></Button>
                 </div>
             </div>
-        </main>
+        </div>
     )
 };
+
+export default Header;
