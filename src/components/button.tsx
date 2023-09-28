@@ -19,6 +19,7 @@ interface ButtonProps {
     iconOrder?: IconOrder | "",
     backgroundColorHover?: String | "",
     borderColorHover?: String | "",
+    position?: String | "",
     icon?: any | null
 };
 
@@ -26,14 +27,14 @@ const Button = (props: ButtonProps) => {
     const { 
         height, maxheight, width, maxwidth, text, fontWeigth, colorText, fontSize, 
         borderColor, borderWidth, backgroundColor, margin, padding, borderRadius, 
-        transition, iconOrder, backgroundColorHover, borderColorHover, icon 
+        transition, iconOrder, backgroundColorHover, borderColorHover, position, icon 
     } = props;
     
     return (
         <button className={`
-            flex flex-row items-center text-center justify-center 
+            flex flex-row items-center text-center justify-center
             ${height} ${maxheight} ${width} ${maxwidth} 
-            ${margin} ${padding} 
+            ${margin} ${padding} ${position}
             ${colorText} ${fontWeigth} ${fontSize}  
             ${borderWidth} ${borderColor}  
             ${backgroundColor} ${borderRadius}
