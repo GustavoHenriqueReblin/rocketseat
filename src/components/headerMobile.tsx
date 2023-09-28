@@ -8,8 +8,9 @@ import Button from "@/components/button";
 const Header = () => {
     return (
         <div className="
+            fixed top-0
             lg:hidden mobile:flex
-            h-[calc(83px)] w-full border-b justify-center border-zinc-800 px-6
+            h-[calc(83px)] w-full border-b justify-center border-zinc-800 px-6 z-10 bg-background
         ">
             <div className="h-full w-full flex flex-row items-center pb-1 max-w-8x1">
 

@@ -15,6 +15,7 @@ const Particle = () => {
     }, []);
 
     const particlesOptions = {
+        fullScreen: { enable: false },
         fpsLimit: 120,
         interactivity: {
             detectsOn: "canvas",
@@ -26,9 +27,12 @@ const Particle = () => {
                 },
             },
             modes: {
-                repulse: {
-                    distance: 300,
-                    duration: 0.8,
+                bubble: {
+                    distance: 150,
+                    duration: 1,
+                    opacity: 0.76,
+                    size: 2.5,
+                    speed: 1
                 },
             },
         },
@@ -82,7 +86,7 @@ const Particle = () => {
     };
 
     return (
-        <div className="-z-10 h-0 w-0">
+        <div className="h-screen w-full relative">
             <Particles
                 init={particlesInit}
                 loaded={particlesLoaded}

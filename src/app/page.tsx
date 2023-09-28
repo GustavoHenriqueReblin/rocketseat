@@ -20,21 +20,20 @@ export default function Home() {
 
   return (
     <>
-      <Particle></Particle>
-
       <Header links={links}></Header>
       <HeaderMobile></HeaderMobile>
 
       <Discount></Discount>
 
-      <Image className="absolute mt-36 -z-20"
+      <Image className="absolute mt-36 -z-50"
           src={background}
           alt=""
           width={5460}
       />
+      <Particle></Particle>
 
       {/* Remover */}
-      {/* <div className="h-[calc(8500px)] w-full"></div> */}
+      <div className="h-[calc(8500px)] w-full"></div>
     </>
   )
 };
