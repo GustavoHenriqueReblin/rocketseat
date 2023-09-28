@@ -5,7 +5,7 @@ import { MdOutlineDiscount } from '@/node_modules/react-icons/md';
 const Discount = () => {
     return (
         <div className=" 
-            mobile:h-28 mobile:flex-col md:h-14 md:flex-row
+            mobile:h-28 mobile:flex-col md:h-14 md:flex-row md:mt-[83px]
             w-full bg-[#633bbc] flex items-center justify-center cursor-pointer z-0
         ">
             <Button
