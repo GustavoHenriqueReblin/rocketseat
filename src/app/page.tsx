@@ -1,14 +1,12 @@
 import Header from "@/components/header";
 import Discount from "@/components/discount";
 import HeaderMobile from "@/components/headerMobile";
-import Text from "@/components/text";
 import { LinkTypes } from "@/types/link-types";
 import Image from '@/node_modules/next/image';
 import background from '@/assets/hero-background.webp';
-import hand from '@/assets/hand.svg';
 import Particle from "@/components/particle";
 
-export default function Home() {
+const Home = () => {
   const links = [
     { text: "Home" },
     { text: "Programas", type: LinkTypes.MOREOPTIONS },
@@ -25,7 +23,7 @@ export default function Home() {
 
       <Discount></Discount>
 
-      <Image className="absolute mt-36 -z-50"
+      <Image className="absolute md:mt-36 mobile:mt-[calc(200px)] -z-50"
           src={background}
           alt=""
           width={5460}
@@ -37,3 +35,5 @@ export default function Home() {
     </>
   )
 };
+
+export default Home

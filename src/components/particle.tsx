@@ -86,7 +86,9 @@ const Particle = () => {
     };
 
     return (
-        <div className="h-screen w-full relative">
+        <div className="
+            mobile:h-56 md:h-screen
+            w-full relative flex">
             <Particles
                 init={particlesInit}
                 loaded={particlesLoaded}
